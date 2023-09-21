@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #333;
+}
+
+button {
+	width: 120px;
+	position: absolute;
+	top: 50px;
+	background-color: transparent;
+	padding: 10px 30px;
+	border: solid 3px white;
+	border-radius: 5px;
+	text-transform: uppercase;
+	color: azure;
+	cursor: pointer;
+	letter-spacing: 2px;
+	/* transition: 0.5s; */
+	font-weight: bold;
+	transform: translateX(-50%);
+}
+button:hover {
+	background-color: white;
+	color: black;
+	transition: 0.5s;
+}
+.square {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 150px;
+	border-radius: 25px;
+	border: solid 2px;
+	transition: 0.5s;
+	transform: translateX(-50%);
+}
+.btn-zoom {
+	left: 20%;
+}
+.btn-zoom:hover ~ .square {
+	width: 200px;
+	height: 200px;
+	/* transform: scale(1.5); */
+}
+.btn-move {
+	left: 40%;
+}
+.btn-move:hover ~ .square {
+	top: 300px;
+}
+
+.btn-color {
+	left: 60%;
+}
+.btn-color:hover ~ .square {
+	background-color: black;
+	border-color: black;
+	box-shadow: 0 0 15px black;
+}
+.blue {
+	background-color: blue;
+	left: 20%;
+	border-color: rgb(4, 4, 33);
+	box-shadow: 0 0 15px blue;
+}
+
+.red {
+	background-color: red;
+	left: 40%;
+	border-color: rgb(106, 2, 2);
+	box-shadow: 0 0 15px red;
+}
+.green {
+	background-color: green;
+	left: 60%;
+	border-color: rgb(0, 38, 0);
+	box-shadow: 0 0 15px green;
+}
